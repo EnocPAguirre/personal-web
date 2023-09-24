@@ -1,3 +1,12 @@
+$blue-color-1: #08678c;
+$blue-color-2: #074973;
+$blue-color-3: #032859;
+$blue-color-4: #011126;
+$blue-color-5: #011c40;
+
+$white-color-0 : white;
+$black-color-0: black;
+
 body {
   margin: 0;
 }
@@ -38,13 +47,26 @@ header {
 
 .title {
   font-size: 7rem;
-  color: white;
-  text-shadow: 0 0 5px black;
+  color: $white-color-0;
+  text-shadow: 0 0 10px $black-color-0;
+}
+
+.subtitle {
+  font-size: 5rem;
+  color: $white-color-0;
+  text-shadow: 0 0 10px $black-color-0;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 35px;
 }
 
 section {
   font-size: 2rem;
   padding: 2rem;
-  background-color: #333;
+  background-color: $blue-color-3;
   color: white;
 }

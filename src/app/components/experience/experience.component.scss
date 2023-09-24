@@ -1,0 +1,38 @@
+.card-experience {
+        max-width: 400px;
+        border: 20px;
+        margin-bottom: 50px;
+}
+
+.work {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+
+.point {
+    width: 45px;
+    height: 45px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.vl {
+    border-left: 3px solid white;
+    height: 550px;
+    position: relative;
+    right: 38px;
+    top: 2px;
+}
+
+li {
+    margin-bottom: 5px;
+    margin-right: 35px;
+    text-align: justify;
+    text-justify: auto;
+}
+

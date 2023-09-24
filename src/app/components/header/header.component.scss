@@ -1,0 +1,14 @@
+$blue-color-1: #08678c;
+$blue-color-2: #074973;
+$blue-color-3: #032859;
+$blue-color-4: #011126;
+$blue-color-5: #011c40;
+
+$white-color-0: white;
+$black-color-0: black;
+
+.toolbar {
+  background-color: $white-color-0;
+  color: $blue-color-3;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.3);
+}
