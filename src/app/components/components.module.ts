@@ -4,6 +4,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { HeaderComponent } from './header/header.component';
 import { SharedModule } from '../shared/shared.module';
 import { ExperienceComponent } from './experience/experience.component';
+import { ExperienceListComponent } from './experience-list/experience-list.component';
 
 
 
@@ -11,7 +12,8 @@ import { ExperienceComponent } from './experience/experience.component';
   declarations: [
     WelcomeComponent,
     HeaderComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    ExperienceListComponent
   ],
   imports: [
     CommonModule,
