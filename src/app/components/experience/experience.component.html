@@ -3,38 +3,22 @@
     <mat-expansion-panel hideToggle>
       <mat-expansion-panel-header class="expansion-header">
         <mat-panel-title class="header-panel">
-          <div class="header-title">Systems Engineer</div>
-          <div class="header-company">Monex</div>
-          <div class="header-period">07/2019 - 01/2020</div>
+          <div class="header-title">{{ work_experience.role }}</div>
+          <div class="header-company">{{ work_experience.company }}</div>
+          <div class="header-period">{{ work_experience.period }}</div>
         </mat-panel-title>
         <mat-panel-description>
-         <div class="more-icon">
-           <mat-icon>expand_more</mat-icon>
-         </div> 
+          <div class="more-icon">
+            <mat-icon>expand_more</mat-icon>
+          </div>
         </mat-panel-description>
       </mat-expansion-panel-header>
       <div>
-        <ul>
-          <li>Developed micro-services on Java with Spring Boot 5.</li>
-          <li>
-            Developed a log monitoring with Kibana, Logstash and Elasticsearch
-            to know the applications' status.
-          </li>
-          <li>
-            Developed a Python application using Django to show data about
-            messages sent around the country through out the day. Developed a
-            Java System intended for knowing clients' satisfaction. This system
-            was used around all the Telcel support centers. It worked by
-            generating message queues and micro-services.
-          </li>
-          <li>
-            Developed an Angular application in charge of managing Telcel's
-            subscriptions. Developed a React components for a system to get
-            information about client's satisfaction.
-          </li>
+        <ul *ngFor="let activity of work_experience.activities">
+          <li>{{activity}}</li>
+         
         </ul>
       </div>
     </mat-expansion-panel>
   </mat-accordion>
 </div>
-

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { work } from 'src/app/interfaces/work.interface';
 
 @Component({
   selector: 'app-experience',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienceComponent implements OnInit {
 
   panelOpenState = false;
+
+  @Input() work_experience: work = {} as work
 
 
   constructor() { }
